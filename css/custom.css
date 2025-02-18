@@ -1,0 +1,244 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000; /* Black text */
+	    margin-top: 0;
+    padding-top: 0;
+}
+
+a {
+    color: #ca36ae; /* Change this to any color you like */
+}
+
+a:hover {
+    color: #ca36ae; /* Optional: Change hover color */
+}
+
+.header-logo {
+    padding: 0;
+    margin: 0;
+}
+
+.header-logo img {
+    max-height: 70px; /
+	        width: auto !important;
+        height: auto !important;
+	
+	* Adjust the logo size if necessary */
+    padding: 0;
+    margin: 0;
+}
+
+.site-logo img {
+	max-height: 100px;
+	margin: 0;
+}
+
+
+/* Target the main header row */
+.header--row.header-main {
+    max-height: auto; /* Let the height adjust to the content */
+    padding: 1px 0; /* Reduce padding to shrink the header size */
+}
+
+
+
+header#masthead {
+    padding: 0;
+    margin: 0;
+    height: auto; /* Ensure height adjusts to content */
+}
+
+.header--row header-main {
+	max-height: 100px;
+}
+
+/* Consolidated styles for .row--wrapper and .header--row */
+.header--row, .row--wrapper {
+    padding-top: 1px !important;  /* Adjust this value as needed */
+    padding-bottom: 1px !important;  /* Adjust this value as needed */
+    margin: 0 !important;
+    height: auto !important;  /* Ensure the height adjusts to the content */
+    overflow: hidden;  /* Prevents any excess content from overflowing */
+}
+
+/* Remove default padding specific to Neve theme */
+.header-main {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Reduce padding for the top header */
+.header-top {
+    padding: 1px 0; /* Adjust this to reduce the height of the top header */
+    margin: 0;
+}
+
+/* Adjust the header banner height */
+.header-main, .header-row {
+    padding: 5px 0 !important; /* Reduce padding */
+    margin: 0 !important;
+    height: auto; /* Ensure height adjusts dynamically */
+}
+
+/* Reduce padding for the main header */
+.header-main {
+    padding: 0px 0; /* Adjust this to reduce the height of the main header */
+    margin: 0;
+}
+
+.header--row-inner {
+	padding: 0;
+	height: auto;
+}
+
+/* Hide the bottom header */
+.header-bottom {
+    display: none;
+}
+
+
+/* Remove any padding for the header layout */
+.hfg_header_layout_main {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000; /* Black text */
+}
+
+p, a, li {
+    font-family: 'Open Sans', sans-serif;
+    color: #000; /* Black text */
+}
+
+.contact-info {
+	color: white;
+}
+
+.testimonial-section {
+    padding: 15px 5px;
+	border-radius: 15px;
+    background-color: #70F1F4; /* Light background */
+    border-left: 5px solid #b2ebf2; /* Border color to match site theme */
+    margin: 20px 0;
+}
+
+.testimonial-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; /* Space between label and testimonial content */
+    text-align: center;
+}
+
+.testimonial-content blockquote {
+    font-style: italic;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.testimonial-content blockquote::before {
+    
+    font-size: 3rem;
+    color: #b2ebf2; /* Quote color matching theme */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.testimonial-author {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonial-author p {
+    margin: 0;
+}
+
+
+
+.nav-ul {
+    padding: 0 !important; /* Adjust padding for nav menu */
+    margin: 0 !important;
+}
+
+/* Default (Desktop View) */
+.contact-info {
+	position: relative;
+	left: 75px;
+	top: -30px;
+    font-size: 16px;
+    text-align: right; /* Align the contact info to the right */
+	    margin-top: 0 !important; /* Remove extra space above contact info */
+    margin-bottom: 0 !important; /* Remove extra space below contact info */
+}
+
+.contact-info .phone-number,
+.contact-info .email-address {
+    display: inline-block; /* Keep them on the same line for desktop */
+    margin-right: 15px; /* Add space between phone and email */
+}
+
+.component-wrap div p {
+    display: none;
+}
+
+
+/* Mobile View (less than 768px width) */
+@media (max-width: 768px) {
+	
+    .site-logo img {
+        max-height: 300px !important; /* Adjust this value as needed for mobile */
+        width: auto !important;
+        height: auto !important;
+    }
+	
+    .contact-info {
+        font-size: 14px;
+        text-align: center; /* Center the text for mobile view */
+			left: 0;
+			top: 0;
+    }
+
+    .contact-info .phone-number,
+    .contact-info .email-address {
+        display: block; /* Stack phone number and email */
+
+        margin-bottom: 4px; /* Add space between the phone and email */
+    }
+}
+
+/* Side Bar */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+}
